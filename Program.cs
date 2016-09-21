@@ -10,6 +10,7 @@ namespace ConsoleApplication
             var host = new WebHostBuilder()
                .UseKestrel()
                .UseStartup<Startup>()
+               .UseIISIntegration()
                .Build();
             
             host.Run();
